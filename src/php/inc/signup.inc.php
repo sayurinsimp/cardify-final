@@ -31,6 +31,13 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
 
         if($errors){
             $_SESSION["errors_signup"] = $errors;
+            
+            $signupData = [
+                "username" => $username,
+                "email" => $email,
+            ];
+            $_SESSION["signup_data"] = $signupData;
+
             header('Location: ../../signup_portal.php');
             die();
         }
@@ -41,7 +48,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
         
         $pdo = null;
         $stmt = null;
-        
+
         die();
     }
     catch(PDOException $e){

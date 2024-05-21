@@ -15,6 +15,7 @@
 </head>
 <body>
     <?php include('./php/inc/header.php');?>;
+    
 
     <div class = "container">
         <div class = "register-box">
