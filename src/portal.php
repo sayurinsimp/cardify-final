@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cardify | Login</title>
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/portal.css">
 </head>
 <body>
@@ -15,17 +16,25 @@
     </div>
     <div class="right">
         <div class="input-wrapper">
+            <!-- LOGIN -->
             <h1>Login</h1>
-            <form action="./php/inc/login.inc.php">
+            <form action = "./php/inc/login.inc.php" method = "POST">
             <div class = "input-box">
                     <input type = "text" name = "uname_field" placeholder = "Username">
                     <i class='bx bxs-user'></i>
                 </div>
                 <div class = "input-box">
-                    <input type = "password" name = "pword_field" placeholder = "Password" required>
+                    <input type = "password" name = "pword_field" placeholder = "Password">
                     <i class='bx bxs-lock-alt'></i>
                 </div>
+                <button type = "submit" class = "submit_button">Login</button>
             </form>
+            <!-- REGISTER -->
+            <div class = "signup-link">
+                <form action = "" method = "post">
+                    <p>Don't have an account? <a href = "./signup_portal.php"><br>Signup now!</a></p>
+                </form>
+            </div>
         </div>
     </div>
 </body>
