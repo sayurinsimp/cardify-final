@@ -26,3 +26,11 @@ html{
     min-height: 100%;
     background: var(--alice-blue);
 }
+
+.form-error{
+    text-align: center;
+}
+
+.form-success{
+    text-align: center;
+}

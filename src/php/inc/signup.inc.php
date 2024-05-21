@@ -27,7 +27,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
             $errors["email_used"] = "Email already registered!";
         }
 
-        require_once('./forms/config_session.inc.php');
+        require_once('./config_session.inc.php');
 
         if($errors){
             $_SESSION["errors_signup"] = $errors;

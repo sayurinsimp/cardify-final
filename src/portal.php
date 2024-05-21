@@ -1,3 +1,8 @@
+<?php 
+    require_once('./php/inc/config_session.inc.php');
+    require_once('./php/inc/login_view.inc.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +34,9 @@
                 </div>
                 <button type = "submit" class = "submit_button">Login</button>
             </form>
+            <?php 
+                check_login_errors();
+            ?>
             <!-- REGISTER -->
             <div class = "signup-link">
                 <form action = "" method = "post">

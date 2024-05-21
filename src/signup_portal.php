@@ -1,5 +1,5 @@
 <?php 
-    require_once('./php/inc/forms/config_session.inc.php');
+    require_once('./php/inc/config_session.inc.php');
     require_once('./php/inc/signup_view.inc.php');
 ?>
 
