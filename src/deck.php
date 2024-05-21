@@ -17,4 +17,14 @@
 
 ?>
 
+<?php include('./php/inc/header.php'); ?>
 
+<div class="text-center">
+    <h1 class = $deck_name>
+        <?php echo $deck_name; ?>
+    </h1>
+
+    <?php include('inc/empty-fields.php'); ?>
+
+    <?php include('inc/forms/deck-name.form.php'); ?>
+</div>
