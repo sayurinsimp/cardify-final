@@ -15,7 +15,11 @@
     <link rel = "stylesheet" href = "./css/style.css">
     <link rel = "stylesheet" href = "./css/header.css">
     <link rel = "stylesheet" href = "./css/index.css">
+    <link rel = "stylesheet" href = "./css/forms.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src = "../../js"></script>
+    <script src = ../../js/card></script>
+    <script src = "../../js/modal"></script>
 </head>
 <body>
 <header>

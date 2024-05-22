@@ -27,10 +27,26 @@ html{
     background: var(--alice-blue);
 }
 
-.form-error{
-    text-align: center;
+.main {
+    margin: 30px auto;
 }
 
-.form-success{
-    text-align: center;
+.main_flashcard-list {
+    max-width: 540px;
+    margin: auto;
+}
+
+.main_add-set {
+    font-size: 1.2rem;
+}
+
+.main_about {
+    margin: 80px auto 10px auto;
+    max-width: 540px;
+}
+
+.list-group{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
 }

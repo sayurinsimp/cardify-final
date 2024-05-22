@@ -4,13 +4,3 @@
 h1{
     font-size: 2.5rem;
 }
-.main_flashcard_list{
-    max-width: 540px;
-    margin: auto;
-}
-
-.list-group{
-    display: flex;
-    flex-direction: column;
-    padding-left: 0;
-}
