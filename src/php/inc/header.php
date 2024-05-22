@@ -1,6 +1,8 @@
 <?php 
     require ('./php/inc/dbh.inc.php');
-    $stmt = $pdo->query("SELECT * FROM deck");
+    require ('./php/inc/config_session.inc.php');
+    $userId = $_SESSION["user_id"];
+    $stmt = $pdo->query("SELECT * FROM deck WHERE user_id = $userId");
     $decks = $stmt->fetchAll();
 ?>
 
