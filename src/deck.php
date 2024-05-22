@@ -11,7 +11,7 @@
 
     // GET FLASHCARDS
     $query = "SELECT * FROM card WHERE deck_id = ?";
-    $stmt = $pdo -> prepare($sql);
+    $stmt = $pdo -> prepare($query);
     $stmt -> execute([$deck_id]);
     $cards = $stmt -> fetchAll();
 
@@ -24,7 +24,7 @@
         <?php echo $deck_name; ?>
     </h1>
 
-    <?php include('inc/empty-fields.php'); ?>
+    <?php include('./php/inc/empty-fields.php'); ?>
 
-    <?php include('inc/forms/deck-name.form.php'); ?>
+    <?php include('./php/inc/forms/add-deck.form.php'); ?>
 </div>
