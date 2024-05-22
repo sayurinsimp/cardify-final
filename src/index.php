@@ -16,9 +16,11 @@
             <?php include('./php/inc/empty-fields.php'); ?>
             <!-- IF EMPTY FIELDS EXIST -->
 
-            
+            <!-- ADD DECK FORM -->
             <?php include('./php/inc/forms/add-deck.form.php'); ?>
+            <!-- ADD DECK FORM -->
 
+            
             <div class="add-set mt-4 text-center">
             <button class="main_add-set show-form btn btn-primary">
                 <i class="fa fa-plus-square" aria-hidden="true"></i>
@@ -26,5 +28,6 @@
             </button>
     </div>
     </div>
+    
 </body>
 </html>

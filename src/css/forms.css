@@ -5,3 +5,16 @@
 .form-success{
     text-align: center;
 }
+
+.form {
+    max-width: 540px;
+    margin: auto;
+}
+
+.form-btns__delete {
+    margin-left: auto;
+}
+
+.edit-deck-form, .add-deck-form {
+    display: none;
+}
