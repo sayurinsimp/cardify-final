@@ -21,7 +21,7 @@
             <!-- ADD DECK FORM -->
 
             <div class = "text-center main-add-deck ">
-                <button class = "positive add-new-deck-button "><i class="fa fa-plus-square" aria-hidden="true"></i>Add New Deck</button>
+                <button class = "show-form positive add-new-deck-button "><i class="fa fa-plus-square" aria-hidden="true"></i>Add New Deck</button>
                 <!-- <button class = "negative test-button text_center">Test Button</button> -->
             </div>
     </div>

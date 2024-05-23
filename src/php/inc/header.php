@@ -19,6 +19,8 @@
     <link rel = "stylesheet" href = "./css/forms.css">
     <link rel = "stylesheet" href = "./css/buttons.css">
     <script src="https://use.fontawesome.com/a25306efbe.js"></script>
+    <script src="./js/index.js"></script>
+
     
 </head>
 <body>

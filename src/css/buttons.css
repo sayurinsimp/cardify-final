@@ -1,14 +1,16 @@
 button{
-    color: #fff;
     border: 1px solid transparent;
     padding: .4rem 1rem;
     border-radius: .25rem;
     cursor: pointer;
-
+    text-align: center;
+    border: none;
+    outline: none;
 }
 
 .positive{
     background-color: var(--tufts-blue);
+    color: #fff;
 }
 
 .negative{
