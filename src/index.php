@@ -4,8 +4,8 @@
 
     <div class = "container main">
         <!-- LISTS FLASHCARD DECKS AVAILABLE -->
-        <h1 class = "text-center">Decks</h1>
-        <div class="list-group main_flashcard-list">
+        <h1 class = "text-center deck-title-container">Decks</h1>
+        <div class = "deck-list">
         <?php foreach ($decks as $deck): ?>
             <a href="deck.php?deck_id=<?php echo $deck['deck_id']; ?>" class="list-group-item list-group-item-action"><?php  echo $deck['deck_name']; ?></a>
                 <?php endforeach; ?>
@@ -20,13 +20,10 @@
             <?php include('./php/inc/forms/add-deck.form.php'); ?>
             <!-- ADD DECK FORM -->
 
-            
-            <div class="add-set mt-4 text-center">
-            <button class="main_add-set show-form btn btn-primary">
-                <i class="fa fa-plus-square" aria-hidden="true"></i>
-                Add New Set
-            </button>
-    </div>
+            <div class = "text-center main-add-deck ">
+                <button class = "positive add-new-deck-button "><i class="fa fa-plus-square" aria-hidden="true"></i>Add New Deck</button>
+                <!-- <button class = "negative test-button text_center">Test Button</button> -->
+            </div>
     </div>
     
 </body>

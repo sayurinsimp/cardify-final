@@ -31,22 +31,25 @@ html{
     margin: 30px auto;
 }
 
-.main_flashcard-list {
-    max-width: 540px;
-    margin: auto;
-}
-
-.main_add-set {
+.main-add-deck {
     font-size: 1.2rem;
-}
-
-.main_about {
-    margin: 80px auto 10px auto;
-    max-width: 540px;
+    margin-top: 1.5rem;
 }
 
 .list-group{
     display: flex;
     flex-direction: column;
     padding-left: 0;
+}
+
+.deck-list {
+    max-width: 540px;
+    margin: auto;
+}
+
+.text-center{
+    text-align: center !important;
+}
+h1{
+    font-size: 2.5rem;
 }

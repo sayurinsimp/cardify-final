@@ -11,10 +11,11 @@
     margin: auto;
 }
 
-.form-btns__delete {
+.form-btns_delete {
     margin-left: auto;
 }
 
 .edit-deck-form, .add-deck-form {
     display: none;
 }
+

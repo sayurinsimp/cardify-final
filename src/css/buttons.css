@@ -1,0 +1,20 @@
+button{
+    color: #fff;
+    border: 1px solid transparent;
+    padding: .4rem 1rem;
+    border-radius: .25rem;
+    cursor: pointer;
+
+}
+
+.positive{
+    background-color: var(--tufts-blue);
+}
+
+.negative{
+    background-color: #868e96;
+}
+
+i .fa, .fa-plus-square{
+    margin-right: 5px;
+}
