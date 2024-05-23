@@ -1,14 +1,14 @@
 $(document).ready(function() {
 
     const $showFormBtn = $('.show-form');
-    const $editSetForm = $('.edit-deck-form');
-    const $addSetForm = $('.add-deck-form');
+    const $editDeckForm = $('.edit-deck-form');
+    const $addDeckForm = $('.add-deck-form');
     const $form = $('.form');
     const $formCancel = $('.form-cancel');
     
     $showFormBtn.on('click', function(){
-        $editSetForm.show();
-        $addSetForm.show();
+        $editDeckForm.show();
+        $addDeckForm.show();
     });
     
     /**

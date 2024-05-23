@@ -2,8 +2,8 @@
 if (isset($_POST['submit'])) {
     require('../inc/dbh.inc.php');
     require_once('../inc/config_session.inc.php');
-    $posted_deck_name = htmlspecialchars($_POST['deck_name']);
     $userId = $_SESSION["user_id"];
+    $posted_deck_name = htmlspecialchars($_POST['deck_name']);
     if (!empty($posted_deck_name)) { 
         $sql = "INSERT INTO deck(deck_name, user_id) VALUES (?, ?)";
         $stmt = $pdo->prepare($sql);

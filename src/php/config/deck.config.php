@@ -1,9 +1,11 @@
 <?php
-    // Check if either a set name edit or new card was submitted
+    // Check if either a deck name edit or new card was submitted
     if (isset($_POST['submit_deck_name']) || isset($_POST['submit_card'])) {
         require('../inc/dbh.inc.php');
+        require_once('../inc/config_session.inc.php');
+        $userId = $_SESSION["user_id"];
 
-        // Query for set name
+        // Query for deck name
         $deck_id = htmlspecialchars($_GET['deck_id']);
         $sql = "SELECT deck_name FROM deck WHERE deck_id = ?";
         $stmt = $pdo->prepare($sql);
@@ -12,7 +14,7 @@
         // Card is being edited
         if (isset($_POST['submit_deck_name'])) { 
             $editedName = htmlspecialchars($_POST['deck_name']);
-            // A set must have name
+            // A deck must have name
             if (!empty($editedName)) {
                 $sql = "UPDATE deck SET deck_name = ? WHERE deck_id = ?";
                 $stmt = $pdo->prepare($sql);

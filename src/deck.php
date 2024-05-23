@@ -19,7 +19,7 @@
 
 <?php include('./php/inc/header.php'); ?>
 
-<div class="text-center">
+<div class="text-center main">
     <h1 class = $deck_name>
         <?php echo $deck_name; ?>
     </h1>
@@ -32,7 +32,7 @@
 
     <!-- /Edit Set Name Form -->
 
-    <button type="button" class="show-form btn btn-outline-secondary mt-3">Edit Set Name</button>
+    <button type="button" class="positive show-form add-new-deck-button">Edit Deck Name</button>
 
 </div>
 

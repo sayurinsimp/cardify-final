@@ -18,10 +18,8 @@
     <script src="./js/index.js"></script>
     <link rel = "stylesheet" href = "./css/style.css">
     <link rel = "stylesheet" href = "./css/header.css">
-    <link rel = "stylesheet" href = "./css/forms.css">
     <link rel = "stylesheet" href = "./css/buttons.css">
-
-    
+    <link rel = "stylesheet" href = "./css/forms.css">
 </head>
 <body>
 <header>

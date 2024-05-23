@@ -31,15 +31,6 @@ html{
     margin: 30px auto;
 }
 
-.main-add-deck {
-    display: flex;
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-}
-
 .list-group{
     display: flex;
     flex-direction: column;
