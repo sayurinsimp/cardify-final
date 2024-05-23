@@ -32,8 +32,12 @@ html{
 }
 
 .main-add-deck {
+    display: flex;
     font-size: 1.2rem;
     margin-top: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
 .list-group{
@@ -47,9 +51,6 @@ html{
     margin: auto;
 }
 
-.text-center{
-    text-align: center !important;
-}
 h1{
     font-size: 2.5rem;
 }

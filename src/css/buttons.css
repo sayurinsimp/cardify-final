@@ -4,8 +4,6 @@ button{
     border-radius: .25rem;
     cursor: pointer;
     text-align: center;
-    border: none;
-    outline: none;
 }
 
 .positive{
