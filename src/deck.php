@@ -19,7 +19,7 @@
 
 <?php include('./php/inc/header.php'); ?>
 
-<div class="text-center">
+<div class="text-center main">
     <h1 class = $deck_name>
         <?php echo $deck_name; ?>
     </h1>
@@ -32,7 +32,7 @@
 
     <!-- /Edit Set Name Form -->
 
-    <button type="button" class="show-form btn btn-outline-secondary mt-3">Edit Set Name</button>
+    <button type="button" class="positive show-form edit-deck-button mt-3">Edit Deck Name</button>
 
 </div>
 
@@ -44,12 +44,12 @@
                 <button class="btn btn-light" type="button">Edit</button>
             </div>
             <div class="card-body">
-                <p class="card-text question"><?php echo $card['question']; ?></p>
-                <p class="card-text answer"><?php echo $card['answer']; ?></p>
+                <p class="card-text question"><?php echo $card['card_question']; ?></p>
+                <p class="card-text answer"><?php echo $card['card_answer']; ?></p>
             </div>
         </div>
         <div class="card edit-card">
-            <?php include('inc/forms/edit-card.form.php'); ?>
+            <?php include('./php/inc/forms/edit-card.form.php'); ?>
         </div>
         <?php endforeach; ?>
         <div class="card add-card text-muted">
@@ -69,3 +69,5 @@
     <div class="my-3">
         <?php include('./modal.php'); ?>
     </div>
+
+    
