@@ -28,10 +28,10 @@
         }
         // New card is being added 
         else if (isset($_POST['submit_card'])) {
-                $question = htmlspecialchars($_POST['question']);
-                $answer = htmlspecialchars($_POST['answer']);
+                $question = htmlspecialchars($_POST['card_question']);
+                $answer = htmlspecialchars($_POST['card_answer']);
             if (!empty($question) && !empty($answer)) {
-                $sql = "INSERT INTO cards(card_question, card_answer, card_id) VALUES (?, ?, ?);";
+                $sql = "INSERT INTO card(card_question, card_answer, deck_id) VALUES (?, ?, ?);";
                 $stmt = $pdo->prepare($sql);
                 $stmt->execute([$question, $answer, $deck_id]);
                 header('Location: ../../deck.php?deck_id=' . $deck_id);

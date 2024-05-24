@@ -1,8 +1,7 @@
 $(document).ready(function() {
-
     const $card = $('.card');
-    const $answer = $('.answer'); // Card answer
-    const $question = $('.question'); // Card question
+    const $question = $('.card_question'); // Card question
+    const $answer = $('.card_answer'); // Card answer
     const $cardEdit = $('.card__edit');
     const $addCardBtn = $('.add-card');
     const $addCardForm = $('.card:last-child');

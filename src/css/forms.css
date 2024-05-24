@@ -15,6 +15,6 @@
     margin-left: auto;
 }
 
-.edit-deck-form, .add-deck-form, .add-card-form, .edit-card-form {
+.edit-deck-form, .add-deck-form{
     display: none;
 }
