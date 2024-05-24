@@ -6,8 +6,8 @@
         $userId = $_SESSION["user_id"];
         
         $card_id = htmlspecialchars($_POST['card_id']);
-        $set_id = htmlspecialchars($_POST['set_id']);
-        $set_name = htmlspecialchars($_POST['set_name']);
+        $card_id = htmlspecialchars($_POST['card_id']);
+        $card_name = htmlspecialchars($_POST['card_name']);
         $edit_question = htmlspecialchars($_POST['edit_question']);
         $edit_answer = htmlspecialchars($_POST['edit_answer']);
 
