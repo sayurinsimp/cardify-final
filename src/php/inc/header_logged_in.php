@@ -37,7 +37,13 @@
     <nav>
         <div class = "wrapper">
             <div class = "nav-bar">
-                <a href = "signup_portal.php"><img src = "img/cardify-high-resolution-logo-white-transparent.svg" height = 60px></a>
+                <a href = "index.php"><img src = "img/cardify-high-resolution-logo-white-transparent.svg" height = 60px></a>
+                <div class = "function-group">
+
+                    <a href = "index.php">Go back to Deck List</a>
+                    <a href = "./php/inc/logout.php">Log Out</a>
+
+                </div>
             </div>
         </div>
     </nav>

@@ -11,3 +11,17 @@ header{
     align-items: center;
     padding: 20px 0;
 }
+
+header a{
+    color: white;
+}
+
+header a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.function-group{
+    display: flex;
+    gap: 20px;
+}

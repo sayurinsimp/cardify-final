@@ -17,51 +17,53 @@
 
 ?>
 
-<?php include('./php/inc/header.php'); ?>
+<?php include('./php/inc/header_logged_in.php'); ?>
 
-<div class="text-center main">
-    <h1 class = $deck_name>
-        <?php echo $deck_name; ?>
-    </h1>
+<div class = "container">
 
-    <?php include('./php/inc/empty-fields.php'); ?>
-
-    <!-- Edit Set Name Form -->
+    <div class="text-center main">
+        <h1 class = $deck_name>
+            <?php echo $deck_name; ?>
+        </h1>
         
-    <?php include('./php/inc/forms/deck-name.form.php'); ?>
-
-    <!-- /Edit Set Name Form -->
-
-    <button type="button" class="positive show-form edit-deck-button mt-3">Edit Deck Name</button>
-
-</div>
-
-<!-- Cards -->
-<div class="cards">
+        <?php include('./php/inc/empty-fields.php'); ?>
+        
+        <!-- Edit Set Name Form -->
+        
+        <?php include('./php/inc/forms/deck-name.form.php'); ?>
+        
+        <!-- /Edit Set Name Form -->
+        
+        <button type="button" class="positive show-form edit-deck-button mt-3">Edit Deck Name</button>
+        
+    </div>
+    
+    <!-- Cards -->
+    <div class="cards">
         <?php foreach($cards as $card): ?>
-        <div class="card show_answer">
-            <div class="card__edit">
-                <button class="btn btn-light" type="button">Edit</button>
+            <div class="card show_answer">
+                <div class="card__edit">
+                    <button class="btn btn-light" type="button">Edit</button>
+                </div>
+                <div class="card-body">
+                    <p class="card-text card_question"><?php echo $card['card_question']; ?></p>
+                    <p class="card-text card_answer"><?php echo $card['card_answer']; ?></p>
+                </div>
             </div>
-            <div class="card-body">
-                <p class="card-text question"><?php echo $card['card_question']; ?></p>
-                <p class="card-text answer"><?php echo $card['card_answer']; ?></p>
+            <div class="card edit-card">
+                <?php include('./php/inc/forms/edit-card.form.php'); ?>
             </div>
-        </div>
-        <div class="card edit-card">
-            <?php include('./php/inc/forms/edit-card.form.php'); ?>
-        </div>
-        <?php endforeach; ?>
-        <div class="card add-card text-muted">
-            <i class="fa fa-plus" aria-hidden="true"></i>
-            Add Card
-        </div>
-        
-
-        <!-- Add Card Form -->
-
-        <?php include('./php/inc/forms/add-card.form.php'); ?>
-
+            <?php endforeach; ?>
+            <div class="card add-card text-muted">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                Add Card
+            </div>
+            
+            
+            <!-- Add Card Form -->
+            
+            <?php include('./php/inc/forms/add-card.form.php'); ?>
+            
         <!-- /Add Card Form -->
 
     </div>
@@ -69,5 +71,6 @@
     <div class="my-3">
         <?php include('./modal.php'); ?>
     </div>
-
+</div>
+    
     

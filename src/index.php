@@ -1,5 +1,5 @@
 <!-- HEADER START -->
-<?php include('./php/inc/header.php'); ?>
+<?php include('./php/inc/header_logged_in.php'); ?>
 <!-- HEADER END -->
 
     <div class = "container main">

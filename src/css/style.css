@@ -27,6 +27,10 @@ html{
     background: var(--alice-blue);
 }
 
+body{
+    background-color: var(--alice-blue);
+}
+
 .main {
     margin: 30px auto;
 }
