@@ -2,7 +2,7 @@
     $host = 'localhost';
     $user = 'root';
     $password = '';
-    $dbname = 'flashcards';
+    $dbname = 'cardifydb';
 
     // Set DSN (Data Source Name)
     $dsn = 'mysql:host='. $host . ';dbname='. $dbname;

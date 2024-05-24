@@ -7,8 +7,8 @@
 <!-- LISTS FLASHCARD DECKS -->
     <h1 class="text-center">Flashcard List</h1>
     <div class="list-group main__flashcard-list">
-        <?php foreach ($sets as $set): ?>
-            <a href="set.php?set_id=<?php echo $set['set_id']; ?>" class="list-group-item list-group-item-action"><?php  echo $set['set_name']; ?></a>
+        <?php foreach ($decks as $deck): ?>
+            <a href="deck.php?deck_id=<?php echo $deck['deck_id']; ?>" class="list-group-item list-group-item-action"><?php  echo $deck['deck_name']; ?></a>
         <?php endforeach; ?>
 
         <!-- Empty Fields Message -->
@@ -23,18 +23,14 @@
     
     <!-- Add set form -->
 
-    <?php include('inc/forms/add-set.form.php'); ?>
+    <?php include('inc/forms/add-deck.form.php'); ?>
 
     <!-- /Add set form -->
     
-    <div class="add-set mt-4 text-center">
-        <button class="main__add-set show-form btn btn-primary">
+    <div class="add-deck mt-4 text-center">
+        <button class="main__add-deck show-form btn btn-primary">
             <i class="fa fa-plus-square" aria-hidden="true"></i>
-            Add New Set
+            Add New Deck
         </button>
     </div>
 
-    <?php include('./inc/about.php'); ?>
-
-    
-<?php include('./inc/footer.php'); ?>

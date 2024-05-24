@@ -1,26 +1,26 @@
 <?php
     require('config/config.php');
-    $set_id = htmlspecialchars($_GET['set_id']);
+    $deck_id = htmlspecialchars($_GET['deck_id']);
 
-    // Get flashcard_set title
-    $sql = "SELECT set_name FROM flashcard_set WHERE set_id = ?;";
+    // Get Deck title
+    $sql = "SELECT deck_name FROM deck WHERE deck_id = ?;";
     $stmt = $pdo->prepare($sql);
-    $stmt->execute([$set_id]);
+    $stmt->execute([$deck_id]);
     $result = $stmt->fetch();
-    $set_name = $result["set_name"];
+    $deck_name = $result["deck_name"];
 
     // Get cards
-    $sql = "SELECT * FROM cards WHERE set_id = ?";
+    $sql = "SELECT * FROM card WHERE deck_id = ?";
     $stmt = $pdo->prepare($sql);
-    $stmt->execute([$set_id]);
+    $stmt->execute([$deck_id]);
     $cards = $stmt->fetchAll();
     
 ?>
 
 <?php include('./inc/header.php'); ?>
     <div class="text-center mt-2 mb-3">
-        <h1 class="set-title">
-            <?php echo $set_name; ?>
+        <h1 class="deck-title">
+            <?php echo $deck_name; ?>
         </h1>
         
         <!-- Empty Fields Message -->
@@ -29,13 +29,13 @@
         
         <!-- /Empty Fields Message -->
 
-        <!-- Edit Set Name Form -->
+        <!-- Edit Deck Name Form -->
         
-        <?php include('inc/forms/set-name.form.php'); ?>
+        <?php include('inc/forms/deck-name.form.php'); ?>
 
-        <!-- /Edit Set Name Form -->
+        <!-- /Edit Deck Name Form -->
 
-        <button type="button" class="show-form btn btn-outline-secondary mt-3">Edit Set Name</button>
+        <button type="button" class="show-form btn btn-outline-secondary mt-3">Edit Deck Name</button>
     </div>
 
     <!-- Cards -->
@@ -71,5 +71,3 @@
     <div class="my-3">
         <?php include('./inc/modal.php'); ?>
     </div>
-
-<?php include('./inc/footer.php'); ?>
