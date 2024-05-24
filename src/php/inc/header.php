@@ -23,6 +23,7 @@
     <link rel = "stylesheet" href = "./css/header.css">
     <link rel = "stylesheet" href = "./css/buttons.css">
     <link rel = "stylesheet" href = "./css/forms.css">
+    <link rel = "stylesheet" href = "./css/cards.css">
 </head>
 <body>
 <header>
