@@ -1,7 +1,7 @@
 <!-- Button trigger modal -->
 <div class="modal-trigger text-center">
   <button type="button" class="btn btn-danger mb-4" data-toggle="modal" data-target="#delete-modal">
-              Delete Set
+              Delete Deck
   </button>
 </div>
 

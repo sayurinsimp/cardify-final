@@ -17,7 +17,7 @@
             id="a" 
             name="edit_answer">
     </div>
-    <!-- Hidden input to get card id, set_name, and set_id -->
+    <!-- Hidden input to get card id, deck_name, and deck_id -->
     <input type="hidden" name="card_id" value="<?php echo $card['card_id']; ?>"/>
     <input type="hidden" name="deck_name" value="<?php echo $deck_name; ?>"/>
     <input type="hidden" name="deck_id" value="<?php echo $deck_id; ?>"/>

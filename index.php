@@ -21,11 +21,11 @@
 
     
     
-    <!-- Add set form -->
+    <!-- Add deck form -->
 
     <?php include('inc/forms/add-deck.form.php'); ?>
 
-    <!-- /Add set form -->
+    <!-- /Add deck form -->
     
     <div class="add-deck mt-4 text-center">
         <button class="main__add-deck show-form btn btn-primary">
