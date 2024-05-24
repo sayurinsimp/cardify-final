@@ -32,7 +32,7 @@
 
     <!-- /Edit Set Name Form -->
 
-    <button type="button" class="positive show-form add-new-deck-button">Edit Deck Name</button>
+    <button type="button" class="positive show-form edit-deck-button mt-3">Edit Deck Name</button>
 
 </div>
 
