@@ -1,7 +1,7 @@
 <form 
     class="form card add-card-form container py-2" 
     method="POST" 
-    action="config/set.config.php?set_id=<?php echo $set_id; ?>">
+    action="config/edit.config.php?deck_id=<?php echo $deck_id; ?>">
     <div class="form-group">
         <label for="user_question">Question</label>
         <input type="text" name="question" id="user_question" class="form-control">
