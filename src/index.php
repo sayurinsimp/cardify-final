@@ -9,6 +9,11 @@
         <?php foreach ($decks as $deck): ?>
             <a href="deck.php?deck_id=<?php echo $deck['deck_id']; ?>" class="list-group-item list-group-item-action"><?php  echo $deck['deck_name']; ?></a>
                 <?php endforeach; ?>
+                <?php 
+                    if (!$decks){
+                        echo '<h4 class = "text-center">Deck list is currently empty! Create a deck!</h4>';
+                    }
+                ?>
             <!-- LISTS FLASHCARD DECKS AVAILABLE -->
             <!-- IF EMPTY FIELDS EXIST -->
             <?php include('./php/inc/empty-fields.php'); ?>
