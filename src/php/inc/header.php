@@ -28,6 +28,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/card.js"></script>
+    <script src="./js/modal.js"></script>
 </head>
 <body>
 <header>
