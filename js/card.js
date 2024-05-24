@@ -34,7 +34,7 @@ $cardEdit.on('click', function(){
 });
 
 /**
- * Show form for adding card to set
+ * Show form for adding card to deck
  */
 $addCardBtn.on('click', function(){
     $addCardForm.show();
