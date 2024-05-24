@@ -53,3 +53,9 @@ h1{
 h4{
     margin: 50px 0px 50px 0px;
 }
+
+.function-group h5{
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;    
+}

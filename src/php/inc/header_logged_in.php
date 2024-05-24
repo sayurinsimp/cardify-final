@@ -3,6 +3,7 @@
     require ('./php/inc/config_session.inc.php');
     if(isset($_SESSION["user_id"])){
         $userId = $_SESSION["user_id"];
+        $user_name = $_SESSION["user_username"];
         $stmt = $pdo->query("SELECT * FROM deck WHERE user_id = $userId");
         $decks = $stmt->fetchAll();
     }
@@ -39,7 +40,9 @@
             <div class = "nav-bar">
                 <a href = "index.php"><img src = "img/cardify-high-resolution-logo-white-transparent.svg" height = 60px></a>
                 <div class = "function-group">
-
+                    <?php if ($user_name){
+                        echo '<h5>Welcome ' . $user_name . "!" . '</h5>';
+                    }?>
                     <a href = "index.php">Go back to Deck List</a>
                     <a href = "./php/inc/logout.php">Log Out</a>
 

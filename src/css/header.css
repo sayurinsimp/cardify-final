@@ -24,4 +24,13 @@ header a:hover{
 .function-group{
     display: flex;
     gap: 20px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.function-group h5{
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
 }

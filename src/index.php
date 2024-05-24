@@ -6,12 +6,13 @@
         <!-- LISTS FLASHCARD DECKS AVAILABLE -->
         <h1 class = "text-center deck-title-container">Decks</h1>
         <div class = "deck-list">
-        <?php foreach ($decks as $deck): ?>
+        <?php if ($decks){
+            foreach ($decks as $deck): ?>
             <a href="deck.php?deck_id=<?php echo $deck['deck_id']; ?>" class="list-group-item list-group-item-action"><?php  echo $deck['deck_name']; ?></a>
-                <?php endforeach; ?>
+                <?php endforeach; }?>
                 <?php 
                     if (!$decks){
-                        echo '<h4 class = "text-center">Deck list is currently empty! Create a deck!</h4>';
+                        echo '<h3 class = "text-center">Deck list is currently empty! Create a deck!</h4>';
                     }
                 ?>
             <!-- LISTS FLASHCARD DECKS AVAILABLE -->
