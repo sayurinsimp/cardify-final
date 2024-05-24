@@ -23,7 +23,7 @@ body{
 .intro-text-container{
     display: flex;
     align-items: center;
-    padding: 2%;
+    padding: 6%;
 }
 
 h1{
