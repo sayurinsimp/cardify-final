@@ -41,7 +41,7 @@
                 <a href = "index.php"><img src = "img/cardify-high-resolution-logo-white-transparent.svg" height = 60px></a>
                 <div class = "function-group">
                     <?php if ($user_name){
-                        echo '<h5>Welcome ' . $user_name . "!" . '</h5>';
+                        echo '<h5 class = "name">Welcome ' . $user_name . "!" . '</h5>';
                     }?>
                     <a href = "index.php">Go back to Deck List</a>
                     <a href = "./php/inc/logout.php">Log Out</a>

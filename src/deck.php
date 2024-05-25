@@ -46,8 +46,8 @@
                     <button class="btn btn-light" type="button">Edit</button>
                 </div>
                 <div class="card-body">
-                    <p class="card-text card_question"><?php echo $card['card_question']; ?></p>
-                    <p class="card-text card_answer text-red"><?php echo $card['card_answer']; ?></p>
+                    <p class="card-text card_question text-center"><?php echo $card['card_question']; ?></p>
+                    <p class="card-text card_answer text-red text-center"><?php echo $card['card_answer']; ?></p>
                 </div>
             </div>
             <div class="card edit-card">
